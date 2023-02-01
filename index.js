@@ -1,10 +1,25 @@
 function isPalindrome(word) {
   // Write your algorithm here
-}
+    const splittingWords = word.split('')
+    const reverseWords = splittingWords.reverse();
+    const joinWords = reverseWords.join('')
+    if(word === joinWords){
+      return true 
+    }else{
+      return false 
+    }
 
+}
+//const abba = 'ray'
+//const split = abba.split('')
+//const reverse = split.reverse()
+//const join = reverse.join('')
+//console.log(join)
 /* 
   Add your pseudocode here
-*/
+// check if abba / racecar/ a / robot/ ab are palindrome
+// abba /racecar and a should return true
+// robot and ab should return false 
 
 /*
   Add written explanation of your solution here
